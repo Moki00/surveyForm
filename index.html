@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey</title>
+  <meta name="description" content="Survey">
+  <meta name="author" content="Moki">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">ForFun Survey Form</h1>
+      <p id="description" class="description text-center">
+        There is no server, so copy and paste to your favorite media.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="anything but Moki, name's taken"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="do not give your email out to strangers"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >How many times a week do you go out?</span></label
+        >
+        <input
+          type="number"
+          name="times"
+          id="number"
+          min="0"
+          max="42"
+          class="form-control"
+          placeholder="times"
+        />
+      </div>
+      <div class="form-group">
+        <p>How do you feel right now?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Pick here</option>
+          <option value="student">Excellent</option>
+          <option value="job">Hungry</option>
+          <option value="learner">Bored</option>
+          <option value="preferNo">Annoyed at these questions</option>
+          <option value="other">nonchalant</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Would you recommend a friend to take this survey?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes, I'll tell them.</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No, I don't want to torture them.</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="no-friends"
+            type="radio"
+            class="input-radio"
+          />I have no friends.</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          can i remove this?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What would you like to see MoKi made next?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />"How to" videos</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Videos of you playing video games</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Videos of your room</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Quizzes</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            class="input-checkbox"
+          />Hyper Casual Games</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="gitter-help-rooms"
+            type="checkbox"
+            class="input-checkbox"
+          />More surveys!</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Stop making things. The internet is already crowded.</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="city-meetups"
+            type="checkbox"
+            class="input-checkbox"
+          />What's this background picture?!</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>Any comments or smart remarks?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="free writing playground..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Don't click this button
+        </button>
+      </div>
+      <p>don't expect anything from this... except amusement</p>
+    </form>
+  </div>
+  
+
+</body>
+</html>
